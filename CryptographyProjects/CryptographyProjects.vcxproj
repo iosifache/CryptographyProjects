@@ -25,7 +25,6 @@
     <ClInclude Include="A2B_Seq_Homework.h" />
     <ClInclude Include="A2B_Seq_Student.h" />
     <ClInclude Include="AiE_Main.h" />
-    <ClInclude Include="Content.h" />
     <ClInclude Include="UTL_Configuration.h" />
     <ClInclude Include="UTL_Crypto.h" />
     <ClInclude Include="UTL_Input.h" />
