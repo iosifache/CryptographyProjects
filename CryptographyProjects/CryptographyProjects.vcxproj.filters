@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{0c9ebe77-0f7d-4a58-8d8f-90e7d287850b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ASN.1 to BER %28A2B%29">
+      <UniqueIdentifier>{06975d00-26f5-4fa0-a2dd-1bbf329c2edf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ASN.1 to BER %28A2B%29\Configuration">
+      <UniqueIdentifier>{fb8301ce-6977-4636-9b55-efb1a4619847}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ASN.1 to BER %28A2B%29">
+      <UniqueIdentifier>{8c94b508-1246-4974-8155-239cb90a19dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ASN.1 to BER %28A2B%29\CustomSequences %28Seq%29">
+      <UniqueIdentifier>{3ad706ca-2dd0-4e98-8ce8-334f50e353da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ASN.1 to BER %28A2B%29\Custom Sequences %28Seq%29">
+      <UniqueIdentifier>{5ff1e978-dfc5-4e62-b8f9-018bee4fbbf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities %28UTL%29">
+      <UniqueIdentifier>{442a6fe0-f6c7-44fc-8a54-4896633723f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AES in ECB Mode %28AiE%29">
+      <UniqueIdentifier>{37b014dc-0c80-434f-8568-bb765f9cb185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AES in ECB Mode %28AiE%29">
+      <UniqueIdentifier>{2fbbce63-4515-4aab-8826-ac10e97592b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities %28UTL%29\Configuration">
+      <UniqueIdentifier>{72a2e66d-aa79-4000-9034-287fe3cc75e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="A2B_Seq_FullName.h">
+      <Filter>Header Files\ASN.1 to BER %28A2B%29\CustomSequences %28Seq%29</Filter>
+    </ClInclude>
+    <ClInclude Include="A2B_Seq_Homework.h">
+      <Filter>Header Files\ASN.1 to BER %28A2B%29\CustomSequences %28Seq%29</Filter>
+    </ClInclude>
+    <ClInclude Include="A2B_Seq_Student.h">
+      <Filter>Header Files\ASN.1 to BER %28A2B%29\CustomSequences %28Seq%29</Filter>
+    </ClInclude>
+    <ClInclude Include="A2B_Configuration.h">
+      <Filter>Header Files\ASN.1 to BER %28A2B%29\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="UTL_Output.h">
+      <Filter>Header Files\Utilities %28UTL%29</Filter>
+    </ClInclude>
+    <ClInclude Include="A2B_Main.h">
+      <Filter>Header Files\ASN.1 to BER %28A2B%29</Filter>
+    </ClInclude>
+    <ClInclude Include="AiE_Main.h">
+      <Filter>Header Files\AES in ECB Mode %28AiE%29</Filter>
+    </ClInclude>
+    <ClInclude Include="UTL_Input.h">
+      <Filter>Header Files\Utilities %28UTL%29</Filter>
+    </ClInclude>
+    <ClInclude Include="UTL_Crypto.h">
+      <Filter>Header Files\Utilities %28UTL%29</Filter>
+    </ClInclude>
+    <ClInclude Include="UTL_Configuration.h">
+      <Filter>Header Files\Utilities %28UTL%29\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Content.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="A2B_Seq_Student.c">
+      <Filter>Source Files\ASN.1 to BER %28A2B%29\Custom Sequences %28Seq%29</Filter>
+    </ClCompile>
+    <ClCompile Include="A2B_Seq_Homework.c">
+      <Filter>Source Files\ASN.1 to BER %28A2B%29\Custom Sequences %28Seq%29</Filter>
+    </ClCompile>
+    <ClCompile Include="A2B_Seq_FullName.c">
+      <Filter>Source Files\ASN.1 to BER %28A2B%29\Custom Sequences %28Seq%29</Filter>
+    </ClCompile>
+    <ClCompile Include="UTL_Output.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="AiE_Main.c">
+      <Filter>Source Files\AES in ECB Mode %28AiE%29</Filter>
+    </ClCompile>
+    <ClCompile Include="UTL_Input.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="UTL_Crypto.c">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="A2B_Main.c">
+      <Filter>Source Files\ASN.1 to BER %28A2B%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
