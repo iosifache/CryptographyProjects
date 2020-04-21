@@ -26,8 +26,8 @@ int AiE_Main(int argc, const char **argv){
 	// Read user data, add padding
 	printf("[+] Introduceti textul ce doriti a fi criptat: ");
 	data = stdin_read(AES_BLOCK_SIZE , &length);
-	pkcs5_pad(data, length, AES_BLOCK_SIZE);
-	print_hex_with_caption("[+] Textul intrudus, cu padding-ul PKCS#5, este: ", data, length);
+	pkcs7_pad(data, length, AES_BLOCK_SIZE);
+	print_hex_with_caption("[+] Textul intrudus, cu padding-ul PKCS#7, este: ", data, length);
 
 	// Allocate encrypted and decrypted buffers
 	iteration_count = length / AES_BLOCK_SIZE;
@@ -62,8 +62,8 @@ int AiE_Main(int argc, const char **argv){
 	print_hex_with_caption("[+] Textul decriptat este: ", decrypted_buffer, length);
 
 	// Unpad decrypted text
-	pkcs5_unpad(decrypted_buffer, length, AES_BLOCK_SIZE);
-	printf("[+] Textul decriptat, fara padding PKCS#5, este: %s\n", decrypted_buffer);
+	pkcs7_unpad(decrypted_buffer, length, AES_BLOCK_SIZE);
+	printf("[+] Textul decriptat, fara padding PKCS#7, este: %s\n", decrypted_buffer);
 
 	// Free memory
 	free(data);

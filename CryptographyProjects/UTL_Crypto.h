@@ -4,8 +4,8 @@
 
 #pragma region PaddingSchemes
 
-void pkcs5_pad(char* buffer, int length, int multiple_of);
-void pkcs5_unpad(char* buffer, int length, int multiple_of);
+void pkcs7_pad(char* buffer, int length, int multiple_of);
+void pkcs7_unpad(char* buffer, int length, int multiple_of);
 
 #pragma endregion
 

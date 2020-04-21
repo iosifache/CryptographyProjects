@@ -7,7 +7,7 @@
 
 #pragma region PaddingSchemes
 
-void pkcs5_pad(char *buffer, int length, int multiple_of){
+void pkcs7_pad(char *buffer, int length, int multiple_of){
 
 	int actual_strlen, pad_value, i;
 
@@ -26,7 +26,7 @@ void pkcs5_pad(char *buffer, int length, int multiple_of){
 
 }
 
-void pkcs5_unpad(char* buffer, int length, int multiple_of){
+void pkcs7_unpad(char* buffer, int length, int multiple_of){
 
 	int flag = 1;
 	int possible_padding_value, i;
