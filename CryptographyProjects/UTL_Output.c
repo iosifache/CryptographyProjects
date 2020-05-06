@@ -9,7 +9,7 @@ int print_hex(const void *data, int len){
     const unsigned char *ptr = data;
 
     // Print
-    for (int i = 0; i < len; i++) {
+    for (int i = 0; i < len; i++){
         printf("0x%02x ", *ptr);
         ptr += 1;
     }
@@ -20,7 +20,7 @@ int print_hex(const void *data, int len){
 
 }
 
-int print_hex_with_caption(const char* prefix_caption, const void* data, int len) {
+int print_hex_with_caption(const char* prefix_caption, const void* data, int len){
    
     // Print caption
     printf("%s", prefix_caption);
@@ -34,7 +34,7 @@ int print_hex_with_caption(const char* prefix_caption, const void* data, int len
 
 #pragma region FileDumping
 
-int dump_to_file(const char *filename, const void *data, int len) {
+int dump_to_file(const char *filename, const void *data, int len){
 
     FILE *file;
     int written_chars;

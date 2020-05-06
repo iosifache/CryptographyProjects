@@ -43,6 +43,12 @@
     <Filter Include="Header Files\Utilities %28UTL%29\Configuration">
       <UniqueIdentifier>{72a2e66d-aa79-4000-9034-287fe3cc75e1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\AES in GCM Mode %28AiG%29">
+      <UniqueIdentifier>{8c49c8cc-1c84-4c19-b532-3759f4fd89f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AES in GCM Mode %28AiG%29">
+      <UniqueIdentifier>{33e6aeb0-b7a4-4f94-b954-6f20440cbfe1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A2B_Seq_FullName.h">
@@ -75,6 +81,15 @@
     <ClInclude Include="UTL_Configuration.h">
       <Filter>Header Files\Utilities %28UTL%29\Configuration</Filter>
     </ClInclude>
+    <ClInclude Include="AiG_Elements.h">
+      <Filter>Header Files\AES in GCM Mode %28AiG%29</Filter>
+    </ClInclude>
+    <ClInclude Include="UTL_Math.h">
+      <Filter>Header Files\Utilities %28UTL%29</Filter>
+    </ClInclude>
+    <ClInclude Include="AiG_Main.h">
+      <Filter>Header Files\AES in GCM Mode %28AiG%29</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A2B_Seq_Student.c">
@@ -103,6 +118,12 @@
     </ClCompile>
     <ClCompile Include="Main.c">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AiG_Elements.c">
+      <Filter>Source Files\AES in GCM Mode %28AiG%29</Filter>
+    </ClCompile>
+    <ClCompile Include="AiG_Main.c">
+      <Filter>Source Files\AES in GCM Mode %28AiG%29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

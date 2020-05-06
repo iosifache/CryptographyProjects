@@ -51,7 +51,7 @@ int AiE_Main(int argc, const char **argv){
 
 	// Set key for AES decrypt
 	ret_val = AES_set_decrypt_key(user_key, 8 * AES_BLOCK_SIZE, &aes_dec_key);
-	if (ret_val) {
+	if (ret_val){
 		printf("[!] Eroare la asignarea cheii");
 		exit(1);
 	}

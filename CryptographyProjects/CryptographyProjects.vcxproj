@@ -25,9 +25,11 @@
     <ClInclude Include="A2B_Seq_Homework.h" />
     <ClInclude Include="A2B_Seq_Student.h" />
     <ClInclude Include="AiE_Main.h" />
+    <ClInclude Include="AiG_Elements.h" />
     <ClInclude Include="UTL_Configuration.h" />
     <ClInclude Include="UTL_Crypto.h" />
     <ClInclude Include="UTL_Input.h" />
+    <ClInclude Include="UTL_Math.h" />
     <ClInclude Include="UTL_Output.h" />
   </ItemGroup>
   <ItemGroup>
@@ -35,8 +37,11 @@
     <ClCompile Include="A2B_Seq_FullName.c" />
     <ClCompile Include="A2B_Seq_Homework.c" />
     <ClCompile Include="AiE_Main.c" />
+    <ClCompile Include="AiG_Elements.c" />
+    <ClCompile Include="AiG_Main.c" />
     <ClCompile Include="Main.c" />
     <ClCompile Include="A2B_Seq_Student.c" />
+    <ClInclude Include="AiG_Main.h" />
     <ClCompile Include="UTL_Crypto.c" />
     <ClCompile Include="UTL_Input.c" />
     <ClCompile Include="UTL_Output.c" />
@@ -95,9 +100,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>S:\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <LibraryPath>S:\Visual Leak Detector\lib\Win64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>S:\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <LibraryPath>S:\Visual Leak Detector\lib\Win64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -130,7 +139,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <AdditionalLibraryDirectories>S:\OpenSSL\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>libcryptoMT.lib;libcryptoMTd.lib;libcryptoMD.lib;libcryptoMDd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>

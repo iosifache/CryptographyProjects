@@ -40,7 +40,7 @@ void pkcs7_unpad(char* buffer, int length, int multiple_of){
 
 	// Verify if text is padded
 	for (i = length - 2; i > length - possible_padding_value; i--)
-		if (buffer[i] != possible_padding_value) {
+		if (buffer[i] != possible_padding_value){
 			flag = 0;
 			break;
 		}

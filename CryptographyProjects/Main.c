@@ -5,17 +5,10 @@
 
 #pragma endregion
 
-#pragma region IncludedHeaders
-
-#include "A2B_Main.h"
-#include "AiE_Main.h"
-
-#pragma endregion
-
 #pragma region ChoosedProject
 
 // Change this define with project's identifiers (out of UTL)
-#define AiE
+#define AiG
 
 #ifdef NUL
 
@@ -37,6 +30,14 @@
 	#include "AiE_Main.h"
 
 	#define MAIN AiE_Main(argc, argv);
+
+#endif
+
+#ifdef AiG
+
+	#include "AiG_Main.h"
+
+	#define MAIN AiG_Main(argc, argv);
 
 #endif
 

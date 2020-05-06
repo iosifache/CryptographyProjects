@@ -63,7 +63,7 @@ int A2B_Main(int argc, char **argv){
     d2i_Student(&new_student, &const_encoded, length);
 
     // Verify the corectness of data
-    if (new_student == NULL) {
+    if (new_student == NULL){
         printf("[!] Error while processing encoded data..\n");
         exit(0);
     }
