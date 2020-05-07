@@ -28,6 +28,6 @@
    - `libcrypto.lib` static library added in **Linker** - **Input** - **Additional Dependencies**
 2. **change** project identification code in the marked `#define` in the `Main.c` source file
 
-### `Python`
+### `Python 3`
 
-1. **install** required modules by running `python3 -m pip install -r requiremenets.txt`
+1. **install** required modules by running `python3 -m pip install -r requirements.txt`
