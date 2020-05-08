@@ -12,7 +12,7 @@ MODULO = 3525886283
 MAX_NUMBER_TO_REACH = MODULO
 
 # Configuration
-VERBOSE = True
+VERBOSE = False
 
 # Class that models a BC4 worker
 class BC4Worker:
@@ -22,7 +22,7 @@ class BC4Worker:
 
 	# Private method that generates the stream key for BC4
 	@staticmethod
-	def _generate_keys(key: bytes, number_of_generated_keys: int) -> bytes:
+	def _generate_keys(key: bytes, number_of_generated_keys: int, skip_first_round: bool = False) -> bytes:
 
 		# Split the key into two ints, left and right
 		left = Converter.bytes_to_int(key[:(KEY_LENGTH // 2)])
@@ -37,8 +37,9 @@ class BC4Worker:
 		for i in range(0, number_of_generated_keys):
 
 			# Generate next right and left parts
-			left = (5 * left + 11) % MODULO
-			right = (7 * right + 13) % MODULO
+			if (not (skip_first_round and i == 0)):
+				left = (5 * left + 11) % MODULO
+				right = (7 * right + 19) % MODULO
 
 			# XOR parts
 			new_key_part = Converter.int_to_bytes(left ^ right)
@@ -57,7 +58,7 @@ class BC4Worker:
 
 	# Public method that encrypts a text with BC4
 	@staticmethod
-	def encrypt(plain_text: bytes, key: bytes) -> bytes:
+	def encrypt(plain_text: bytes, key: bytes, skip_first_round: bool = False) -> bytes:
 
 		# Check key parameter length
 		key_length = len(key)
@@ -77,7 +78,7 @@ class BC4Worker:
 			log.info("Text to encrypt is: {}".format(Converter.bytes_to_hex(plain_text)))
 
 		# Get keys used for encryption
-		keys = BC4Worker._generate_keys(key, plain_length // CHUNK_LENGTH)
+		keys = BC4Worker._generate_keys(key, plain_length // CHUNK_LENGTH, skip_first_round)
 
 		# Split text in chunks and encrypt
 		encrypted_text: bytes = bytes()
@@ -104,7 +105,7 @@ class BC4Worker:
 
 	# Public method that bruteforces the BC4 encrypted text
 	@staticmethod
-	def brutefoce(ciphertext: bytes, known_plaintext: bytes):
+	def brutefoce(ciphertext: bytes, known_plaintext: bytes, start_with: int = 0):
 
 		# get parts for bruteforce
 		known_plaintext_length = len(known_plaintext)
@@ -132,11 +133,11 @@ class BC4Worker:
 				log.info("New known part of key is: {} (meaning {} ^ {})".format(Converter.bytes_to_hex(new_key_part), Converter.bytes_to_hex(ciphertext_subpart), Converter.bytes_to_hex(known_plaintext_part)))
 
 		# create progress bar
-		progress_bar = tqdm(total = MODULO, ascii = True, position = 0, leave = True)
+		progress_bar = tqdm(total = MODULO - start_with, ascii = True, position = 0, leave = True)
 
 		# bruteforce left part
 		chunk_to_be_compared_with = known_key_part[CHUNK_LENGTH:]
-		for left in range(0, MAX_NUMBER_TO_REACH):
+		for left in range(start_with, MAX_NUMBER_TO_REACH):
 
 			# get L
 			right = Converter.bytes_to_int(known_key_part[0:CHUNK_LENGTH]) ^ left
@@ -145,7 +146,7 @@ class BC4Worker:
 			keys = BC4Worker._generate_keys(b"".join([Converter.int_to_bytes(left), Converter.int_to_bytes(right)]), known_plaintext_length // CHUNK_LENGTH - 1)
 			if (keys == chunk_to_be_compared_with):
 				log.success("Finded L and R are: ({}, {})".format(left, right))
-				break
+				return Converter.int_to_bytes(left) + Converter.int_to_bytes(right)
 
 			# update progress bar
 			progress_bar.update(n = 1)

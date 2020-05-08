@@ -15,7 +15,7 @@
 
 | Name            | Identification Code | Type              | Status                                                             | Description                                                                                                                             |
 |-----------------|---------------------|-------------------|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Bruteforce BC4  | `bc4`               | Homework          | ![](https://img.shields.io/badge/-not%20working-red)               | Bruteforce of a custom-made stream cipher                                                                                               |
+| Bruteforce BC4  | `bc4`               | Homework          | ![](https://img.shields.io/badge/-working-brightgreen)             | Bruteforce of a custom-made stream cipher                                                                                               |
 | Utilities       | `utl`               | Utility functions | ![](https://img.shields.io/badge/-working-brightgreen)             | Functions used in all other projects                                                                                                    |
 
 ## Setup :wrench:
