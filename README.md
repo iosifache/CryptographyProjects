@@ -13,10 +13,11 @@
 
 ### `Python 3`
 
-| Name            | Identification Code | Type              | Status                                                             | Description                                                                                                                             |
-|-----------------|---------------------|-------------------|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Bruteforce BC4  | `bc4`               | Homework          | ![](https://img.shields.io/badge/-working-brightgreen)             | Bruteforce of a custom-made stream cipher                                                                                               |
-| Utilities       | `utl`               | Utility functions | ![](https://img.shields.io/badge/-working-brightgreen)             | Functions used in all other projects                                                                                                    |
+| Name                     | Identification Code | Type              | Status                                                             | Description                                                                                                                    |
+|------------------------------------------------|-------------------|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Bruteforce BC4           | `bc4`               | Homework          | ![](https://img.shields.io/badge/-working-brightgreen)             | Bruteforce of a custom-made stream cipher                                                                                      |
+| Crack Four-eye Principle | `4ep`               | Homework          | ![](https://img.shields.io/badge/-working-brightgreen)             | Crack for a four-eye-based protocol                                                                                            |
+| Utilities                | `utl`               | Utility functions | ![](https://img.shields.io/badge/-working-brightgreen)             | Functions used in all other projects                                                                                           |
 
 ## Setup :wrench:
 

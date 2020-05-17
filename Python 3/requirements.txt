@@ -1,2 +1,4 @@
+pycrypto==2.6.1
+gmpy2==2.0.8
 pwntools==4.0.1
 tqdm==4.45.0
