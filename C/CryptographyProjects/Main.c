@@ -8,7 +8,7 @@
 #pragma region ChoosedProject
 
 // Change this define with project's identifiers (out of UTL)
-#define AiG
+#define RSA
 
 #ifdef NUL
 
@@ -38,6 +38,14 @@
 	#include "AiG_Main.h"
 
 	#define MAIN AiG_Main(argc, argv);
+
+#endif
+
+#ifdef RSA
+
+#include "RSA_Main.h"
+
+#define MAIN RSA_Main(argc, argv);
 
 #endif
 

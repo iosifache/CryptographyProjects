@@ -26,6 +26,9 @@
     <ClInclude Include="A2B_Seq_Student.h" />
     <ClInclude Include="AiE_Main.h" />
     <ClInclude Include="AiG_Elements.h" />
+    <ClInclude Include="RSA_Elements.h" />
+    <ClInclude Include="RSA_Main.h" />
+    <ClInclude Include="RSA_Output.h" />
     <ClInclude Include="UTL_Configuration.h" />
     <ClInclude Include="UTL_Crypto.h" />
     <ClInclude Include="UTL_Input.h" />
@@ -42,6 +45,9 @@
     <ClCompile Include="Main.c" />
     <ClCompile Include="A2B_Seq_Student.c" />
     <ClInclude Include="AiG_Main.h" />
+    <ClCompile Include="RSA_Elements.c" />
+    <ClCompile Include="RSA_Main.c" />
+    <ClCompile Include="RSA_Output.c" />
     <ClCompile Include="UTL_Crypto.c" />
     <ClCompile Include="UTL_Input.c" />
     <ClCompile Include="UTL_Output.c" />

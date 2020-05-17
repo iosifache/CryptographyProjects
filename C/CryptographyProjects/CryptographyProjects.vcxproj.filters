@@ -49,6 +49,12 @@
     <Filter Include="Source Files\AES in GCM Mode %28AiG%29">
       <UniqueIdentifier>{33e6aeb0-b7a4-4f94-b954-6f20440cbfe1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\RSA %28RSA%29">
+      <UniqueIdentifier>{785d8787-71ac-47ec-9878-2cf54b02e850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RSA %28RSA%29">
+      <UniqueIdentifier>{dcdad55d-8fec-4959-900a-84ea7c325c04}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A2B_Seq_FullName.h">
@@ -90,6 +96,15 @@
     <ClInclude Include="AiG_Main.h">
       <Filter>Header Files\AES in GCM Mode %28AiG%29</Filter>
     </ClInclude>
+    <ClInclude Include="RSA_Main.h">
+      <Filter>Header Files\RSA %28RSA%29</Filter>
+    </ClInclude>
+    <ClInclude Include="RSA_Elements.h">
+      <Filter>Header Files\RSA %28RSA%29</Filter>
+    </ClInclude>
+    <ClInclude Include="RSA_Output.h">
+      <Filter>Header Files\RSA %28RSA%29</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A2B_Seq_Student.c">
@@ -124,6 +139,15 @@
     </ClCompile>
     <ClCompile Include="AiG_Main.c">
       <Filter>Source Files\AES in GCM Mode %28AiG%29</Filter>
+    </ClCompile>
+    <ClCompile Include="RSA_Main.c">
+      <Filter>Source Files\RSA %28RSA%29</Filter>
+    </ClCompile>
+    <ClCompile Include="RSA_Elements.c">
+      <Filter>Source Files\RSA %28RSA%29</Filter>
+    </ClCompile>
+    <ClCompile Include="RSA_Output.c">
+      <Filter>Source Files\RSA %28RSA%29</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
