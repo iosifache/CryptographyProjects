@@ -8,7 +8,7 @@
 #pragma region ChoosedProject
 
 // Change this define with project's identifiers (out of UTL)
-#define RSA
+#define FH1
 
 #ifdef NUL
 
@@ -49,11 +49,51 @@
 
 #endif
 
+#ifdef FH1
+
+#include "FH1_Main.h"
+
+#define MAIN FH1_Main(argc, argv);
+
+#endif
+
+#ifdef FH2
+
+#include "FH2_Main.h"
+
+#define MAIN FH2_Main(argc, argv);
+
+#endif
+
+#ifdef FH3
+
+#include "FH3_Main.h"
+
+#define MAIN FH3_Main(argc, argv);
+
+#endif
+
+#ifdef FH4
+
+#include "FH4_Main.h"
+
+#define MAIN FH4_Main(argc, argv);
+
+#endif
+
+#ifdef FH5
+
+#include "FH5_Main.h"
+
+#define MAIN FH5_Main(argc, argv);
+
+#endif
+
 #pragma endregion
 
 #pragma region Main
 
-int main(int argc, char** argv){
+int main(int argc, char **argv){
 
 	MAIN
 

@@ -4,7 +4,7 @@
 
 #pragma region MainFunction
 
-int RSA_Main(int argc, char** argv);
+int RSA_Main(int argc, char **argv);
 
 #pragma endregion
 

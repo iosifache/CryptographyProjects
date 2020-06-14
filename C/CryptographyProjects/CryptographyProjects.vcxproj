@@ -25,32 +25,75 @@
     <ClInclude Include="A2B_Seq_Homework.h" />
     <ClInclude Include="A2B_Seq_Student.h" />
     <ClInclude Include="AiE_Main.h" />
-    <ClInclude Include="AiG_Elements.h" />
-    <ClInclude Include="RSA_Elements.h" />
+    <ClInclude Include="AiG_Internals.h" />
+    <ClInclude Include="FH1_Internals.h" />
+    <ClInclude Include="FH1_Main.h" />
+    <ClInclude Include="FH2_Internals.h" />
+    <ClInclude Include="FH2_Main.h" />
+    <ClInclude Include="FH3_Internals.h" />
+    <ClInclude Include="FH3_Main.h" />
+    <ClInclude Include="FH4_Internals.h" />
+    <ClInclude Include="FH4_Main.h" />
+    <ClInclude Include="FH5_Internals.h" />
+    <ClInclude Include="FH5_Main.h" />
+    <ClInclude Include="RSA_Internals.h" />
+    <ClInclude Include="RSA_Input.h" />
     <ClInclude Include="RSA_Main.h" />
     <ClInclude Include="RSA_Output.h" />
     <ClInclude Include="UTL_Configuration.h" />
     <ClInclude Include="UTL_Crypto.h" />
+    <ClInclude Include="UTL_Enumerations.h" />
     <ClInclude Include="UTL_Input.h" />
+    <ClInclude Include="UTL_Logger.h" />
+    <ClInclude Include="UTL_Macros.h" />
     <ClInclude Include="UTL_Math.h" />
     <ClInclude Include="UTL_Output.h" />
+    <ClInclude Include="UTL_Types.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A2B_Main.c" />
     <ClCompile Include="A2B_Seq_FullName.c" />
     <ClCompile Include="A2B_Seq_Homework.c" />
     <ClCompile Include="AiE_Main.c" />
-    <ClCompile Include="AiG_Elements.c" />
+    <ClCompile Include="AiG_Internals.c" />
     <ClCompile Include="AiG_Main.c" />
+    <ClCompile Include="FH1_Internals.c" />
+    <ClCompile Include="FH1_Main.c" />
+    <ClCompile Include="FH2_Internals.c" />
+    <ClCompile Include="FH2_Main.c" />
+    <ClCompile Include="FH3_Internals.c" />
+    <ClCompile Include="FH3_Main.c" />
+    <ClCompile Include="FH4_Internals.c" />
+    <ClCompile Include="FH4_Main.c" />
+    <ClCompile Include="FH5_Internals.c" />
+    <ClCompile Include="FH5_Main.c" />
     <ClCompile Include="Main.c" />
     <ClCompile Include="A2B_Seq_Student.c" />
     <ClInclude Include="AiG_Main.h" />
     <ClCompile Include="RSA_Elements.c" />
+    <ClCompile Include="RSA_Input.c" />
     <ClCompile Include="RSA_Main.c" />
     <ClCompile Include="RSA_Output.c" />
     <ClCompile Include="UTL_Crypto.c" />
     <ClCompile Include="UTL_Input.c" />
     <ClCompile Include="UTL_Output.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Additional Files\1\Homework.docx" />
+    <None Include="Additional Files\2\private.key" />
+    <None Include="Additional Files\2\public.key" />
+    <None Include="Additional Files\3\encrypted_document.aes" />
+    <None Include="Additional Files\3\parameters.bin" />
+    <None Include="Additional Files\3\rsakey.prv" />
+    <None Include="Additional Files\3\rsakey.pub" />
+    <None Include="Additional Files\5\input.sigature" />
+    <None Include="Additional Files\5\private.key" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Additional Files\2\data.txt" />
+    <Text Include="Additional Files\3\decrypted_document.txt" />
+    <Text Include="Additional Files\3\document.txt" />
+    <Text Include="Additional Files\5\input.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

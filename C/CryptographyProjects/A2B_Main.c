@@ -55,7 +55,7 @@ int A2B_Main(int argc, char **argv){
 
     // Print the encoding
     printf("[+] Encoding of length %d: ", ret_val);
-    print_hex(encoded - ret_val, ret_val);
+    print_hex(encoded - ret_val, ret_val, NULL);
     printf("\n");
 
     // Decode the sequence

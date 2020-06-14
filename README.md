@@ -9,7 +9,8 @@
 | ASN.1 to BER    | `A2B`               | Homework          | ![](https://img.shields.io/badge/-working-brightgreen)             | Encoding of *ASN.1* structure in *BER* format                                                                                           |
 | AES in ECB Mode | `AiE`               | Homework          | ![](https://img.shields.io/badge/-working-brightgreen)             | Implementation of *AES* in *ECB* mode                                                                                                   |
 | AES in GCM Mode | `AiG`               | Homework          | ![](https://img.shields.io/badge/-partially%20working-yellowgreen) | Implementation of *AES* in *GCM* mode, according to [*NIST*'s *SP 800-38D*](https://csrc.nist.gov/publications/detail/sp/800-38d/final) |
-| RSA             | `RSA`               | Laboratory        | ![](https://img.shields.io/badge/-working-brightgreen)             | Implementation of *RSA* (key generation, encryption and decryption)                                                                     |
+| RSA             | `RSA`               | Laboratory        | ![](https://img.shields.io/badge/-working-brightgreen)             | Implementation of *RSA* on *2048* bits (key generation, encryption and decryption)                                                      |
+| Final Homework  | `FH*`               | Homework          | ![](https://img.shields.io/badge/-working-brightgreen)             | Solves for miscellaneous cryptography problems (from working with encryption algorithms to MACs and signatures)                         |
 | Utilities       | `UTL`               | Utility functions | ![](https://img.shields.io/badge/-working-brightgreen)             | Functions used in all other projects                                                                                                    |
 
 ### `Python 3`

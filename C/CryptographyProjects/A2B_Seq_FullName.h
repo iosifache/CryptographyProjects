@@ -12,8 +12,8 @@
 #pragma region Structure
 
 typedef struct {
-	ASN1_PRINTABLESTRING* name;
-	ASN1_PRINTABLESTRING* surname;
+	ASN1_PRINTABLESTRING *name;
+	ASN1_PRINTABLESTRING *surname;
 } FullName;
 
 #pragma endregion

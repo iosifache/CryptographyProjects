@@ -4,7 +4,7 @@
 
 #pragma region MainFunction
 
-int AiG_Main(int argc, char** argv);
+int AiG_Main(int argc, char **argv);
 
 #pragma endregion
 

@@ -4,7 +4,7 @@
 
 #pragma region MainFunction
 
-int A2B_Main(int argc, char** argv);
+int A2B_Main(int argc, char **argv);
 
 #pragma endregion
 

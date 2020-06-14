@@ -55,6 +55,48 @@
     <Filter Include="Header Files\RSA %28RSA%29">
       <UniqueIdentifier>{dcdad55d-8fec-4959-900a-84ea7c325c04}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Final Homework I %28FH1%29">
+      <UniqueIdentifier>{62b10f3d-c058-4587-8169-3bd86748a2bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Final Homework I %28FH1%29">
+      <UniqueIdentifier>{2b268f6c-f05a-4259-8153-b5b19360df9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Final Homework I %28FH1%29">
+      <UniqueIdentifier>{5553f4f0-ddc0-4755-a83d-6fe3ebd457a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Final Homework V %28FH5%29">
+      <UniqueIdentifier>{f65af3c0-cd1f-4e74-a5a8-3fdbd61efef8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Final Homework V %28FH5%29">
+      <UniqueIdentifier>{8b6f5ed8-f5f5-423d-9533-6cb008b44fbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Final Homework V %28FH5%29">
+      <UniqueIdentifier>{5deceffe-00aa-4be1-807d-fb4c8dfb43e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Final Homework II %28FH2%29">
+      <UniqueIdentifier>{4de96f7e-6f37-4547-a18f-a81a3fe39951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Final Homework IV %28FH4%29">
+      <UniqueIdentifier>{92fce44f-57ec-4f0b-a015-3a5c01acf6e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Final Homework IV %28FH4%29">
+      <UniqueIdentifier>{a31070c5-e6c4-4c39-a2f0-3e2ebc4ed31e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Final Homework II %28FH2%29">
+      <UniqueIdentifier>{3f1acf94-e352-4417-b124-b4743ff8c8af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Final Homework II %28FH2%29">
+      <UniqueIdentifier>{12a0aa7b-069d-40ca-bb4e-b916f8a3cac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Final Homework III %28FH3%29">
+      <UniqueIdentifier>{8a0b07de-a045-413d-8570-e5a48c5689ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Final Homework III %28FH3%29">
+      <UniqueIdentifier>{26cfda62-60f5-4623-8735-dd62a869368e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Final Homework III %28FH3%29">
+      <UniqueIdentifier>{6b8f8072-4fde-4de5-a44b-c8095936a653}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="A2B_Seq_FullName.h">
@@ -87,9 +129,6 @@
     <ClInclude Include="UTL_Configuration.h">
       <Filter>Header Files\Utilities %28UTL%29\Configuration</Filter>
     </ClInclude>
-    <ClInclude Include="AiG_Elements.h">
-      <Filter>Header Files\AES in GCM Mode %28AiG%29</Filter>
-    </ClInclude>
     <ClInclude Include="UTL_Math.h">
       <Filter>Header Files\Utilities %28UTL%29</Filter>
     </ClInclude>
@@ -99,11 +138,59 @@
     <ClInclude Include="RSA_Main.h">
       <Filter>Header Files\RSA %28RSA%29</Filter>
     </ClInclude>
-    <ClInclude Include="RSA_Elements.h">
-      <Filter>Header Files\RSA %28RSA%29</Filter>
-    </ClInclude>
     <ClInclude Include="RSA_Output.h">
       <Filter>Header Files\RSA %28RSA%29</Filter>
+    </ClInclude>
+    <ClInclude Include="FH1_Main.h">
+      <Filter>Header Files\Final Homework I %28FH1%29</Filter>
+    </ClInclude>
+    <ClInclude Include="FH5_Main.h">
+      <Filter>Header Files\Final Homework V %28FH5%29</Filter>
+    </ClInclude>
+    <ClInclude Include="RSA_Input.h">
+      <Filter>Header Files\RSA %28RSA%29</Filter>
+    </ClInclude>
+    <ClInclude Include="UTL_Types.h">
+      <Filter>Header Files\Utilities %28UTL%29</Filter>
+    </ClInclude>
+    <ClInclude Include="FH4_Main.h">
+      <Filter>Header Files\Final Homework IV %28FH4%29</Filter>
+    </ClInclude>
+    <ClInclude Include="UTL_Logger.h">
+      <Filter>Header Files\Utilities %28UTL%29</Filter>
+    </ClInclude>
+    <ClInclude Include="FH2_Main.h">
+      <Filter>Header Files\Final Homework II %28FH2%29</Filter>
+    </ClInclude>
+    <ClInclude Include="FH3_Main.h">
+      <Filter>Header Files\Final Homework III %28FH3%29</Filter>
+    </ClInclude>
+    <ClInclude Include="UTL_Enumerations.h">
+      <Filter>Header Files\Utilities %28UTL%29</Filter>
+    </ClInclude>
+    <ClInclude Include="FH4_Internals.h">
+      <Filter>Header Files\Final Homework IV %28FH4%29</Filter>
+    </ClInclude>
+    <ClInclude Include="FH3_Internals.h">
+      <Filter>Header Files\Final Homework III %28FH3%29</Filter>
+    </ClInclude>
+    <ClInclude Include="FH5_Internals.h">
+      <Filter>Header Files\Final Homework V %28FH5%29</Filter>
+    </ClInclude>
+    <ClInclude Include="AiG_Internals.h">
+      <Filter>Header Files\AES in GCM Mode %28AiG%29</Filter>
+    </ClInclude>
+    <ClInclude Include="RSA_Internals.h">
+      <Filter>Header Files\RSA %28RSA%29</Filter>
+    </ClInclude>
+    <ClInclude Include="FH2_Internals.h">
+      <Filter>Header Files\Final Homework II %28FH2%29</Filter>
+    </ClInclude>
+    <ClInclude Include="UTL_Macros.h">
+      <Filter>Header Files\Utilities %28UTL%29</Filter>
+    </ClInclude>
+    <ClInclude Include="FH1_Internals.h">
+      <Filter>Header Files\Final Homework I %28FH1%29</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -134,9 +221,6 @@
     <ClCompile Include="Main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AiG_Elements.c">
-      <Filter>Source Files\AES in GCM Mode %28AiG%29</Filter>
-    </ClCompile>
     <ClCompile Include="AiG_Main.c">
       <Filter>Source Files\AES in GCM Mode %28AiG%29</Filter>
     </ClCompile>
@@ -149,5 +233,84 @@
     <ClCompile Include="RSA_Output.c">
       <Filter>Source Files\RSA %28RSA%29</Filter>
     </ClCompile>
+    <ClCompile Include="FH5_Main.c">
+      <Filter>Source Files\Final Homework V %28FH5%29</Filter>
+    </ClCompile>
+    <ClCompile Include="RSA_Input.c">
+      <Filter>Source Files\RSA %28RSA%29</Filter>
+    </ClCompile>
+    <ClCompile Include="FH4_Main.c">
+      <Filter>Source Files\Final Homework IV %28FH4%29</Filter>
+    </ClCompile>
+    <ClCompile Include="FH2_Main.c">
+      <Filter>Source Files\Final Homework II %28FH2%29</Filter>
+    </ClCompile>
+    <ClCompile Include="FH3_Main.c">
+      <Filter>Source Files\Final Homework III %28FH3%29</Filter>
+    </ClCompile>
+    <ClCompile Include="FH4_Internals.c">
+      <Filter>Source Files\Final Homework IV %28FH4%29</Filter>
+    </ClCompile>
+    <ClCompile Include="FH3_Internals.c">
+      <Filter>Source Files\Final Homework III %28FH3%29</Filter>
+    </ClCompile>
+    <ClCompile Include="FH5_Internals.c">
+      <Filter>Source Files\Final Homework V %28FH5%29</Filter>
+    </ClCompile>
+    <ClCompile Include="AiG_Internals.c">
+      <Filter>Source Files\AES in GCM Mode %28AiG%29</Filter>
+    </ClCompile>
+    <ClCompile Include="FH2_Internals.c">
+      <Filter>Source Files\Final Homework II %28FH2%29</Filter>
+    </ClCompile>
+    <ClCompile Include="FH1_Internals.c">
+      <Filter>Source Files\Final Homework I %28FH1%29</Filter>
+    </ClCompile>
+    <ClCompile Include="FH1_Main.c">
+      <Filter>Source Files\Final Homework I %28FH1%29</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Additional Files\5\input.sigature">
+      <Filter>Resource Files\Final Homework V %28FH5%29</Filter>
+    </None>
+    <None Include="Additional Files\5\private.key">
+      <Filter>Resource Files\Final Homework V %28FH5%29</Filter>
+    </None>
+    <None Include="Additional Files\1\Homework.docx">
+      <Filter>Resource Files\Final Homework I %28FH1%29</Filter>
+    </None>
+    <None Include="Additional Files\2\private.key">
+      <Filter>Resource Files\Final Homework II %28FH2%29</Filter>
+    </None>
+    <None Include="Additional Files\2\public.key">
+      <Filter>Resource Files\Final Homework II %28FH2%29</Filter>
+    </None>
+    <None Include="Additional Files\3\encrypted_document.aes">
+      <Filter>Resource Files\Final Homework III %28FH3%29</Filter>
+    </None>
+    <None Include="Additional Files\3\parameters.bin">
+      <Filter>Resource Files\Final Homework III %28FH3%29</Filter>
+    </None>
+    <None Include="Additional Files\3\rsakey.prv">
+      <Filter>Resource Files\Final Homework III %28FH3%29</Filter>
+    </None>
+    <None Include="Additional Files\3\rsakey.pub">
+      <Filter>Resource Files\Final Homework III %28FH3%29</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Additional Files\5\input.txt">
+      <Filter>Resource Files\Final Homework V %28FH5%29</Filter>
+    </Text>
+    <Text Include="Additional Files\2\data.txt">
+      <Filter>Resource Files\Final Homework II %28FH2%29</Filter>
+    </Text>
+    <Text Include="Additional Files\3\decrypted_document.txt">
+      <Filter>Resource Files\Final Homework III %28FH3%29</Filter>
+    </Text>
+    <Text Include="Additional Files\3\document.txt">
+      <Filter>Resource Files\Final Homework III %28FH3%29</Filter>
+    </Text>
   </ItemGroup>
 </Project>

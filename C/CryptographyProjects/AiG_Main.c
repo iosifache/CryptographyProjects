@@ -3,7 +3,7 @@
 #include <openssl/rand.h>
 #include <stdio.h>
 #include "AiG_Main.h"
-#include "AiG_Elements.h"
+#include "AiG_Internals.h"
 #include "UTL_Output.h"
 #include "UTL_Math.h"
 
@@ -38,15 +38,15 @@ int AiG_Main(int argc, const char **argv){
 	InitContext(user_key);
 
 	// Print parameters
-	print_hex_with_caption("[+] Textul in clar este: ", plaintext, PLAINTEXT_LENGTH);
-	print_hex_with_caption("[+] Informatiile aditionale sunt: ", aad, AAD_LENGTH);
-	print_hex_with_caption("[+] Cheia este: ", user_key, KEY_SIZE);
-	print_hex_with_caption("[+] Vectorul de initializare este: ", iv, IV_RECOMMENDED_LENGTH);
+	print_hex(plaintext, PLAINTEXT_LENGTH, "[+] Textul in clar este: ");
+	print_hex(aad, AAD_LENGTH, "[+] Informatiile aditionale sunt: ");
+	print_hex(user_key, KEY_SIZE, "[+] Cheia este: ");
+	print_hex(iv, IV_RECOMMENDED_LENGTH, "[+] Vectorul de initializare este: ");
 
 	// Encrypt and print the result
 	AuthEncryptWithGCM(plaintext, PLAINTEXT_LENGTH, aad, AAD_LENGTH, iv, MIN_TAG_LENGTH, ciphertext, tag);
-	print_hex_with_caption("[+] Textul criptat este: ", ciphertext, PLAINTEXT_LENGTH);
-	print_hex_with_caption("[+] Tag-ul de autentificare este: ", tag, MIN_TAG_LENGTH);
+	print_hex(ciphertext, PLAINTEXT_LENGTH, "[+] Textul criptat este: ");
+	print_hex(tag, MIN_TAG_LENGTH, "[+] Tag-ul de autentificare este: ");
 
 	// Check if the decryption need to fail (by changing the AAD)
 	if (WILL_FAIL)
@@ -57,7 +57,7 @@ int AiG_Main(int argc, const char **argv){
 	if (ret_val)
 		printf("[!] Decriptarea a esuat din cauza unor erori sau a esecului validarii tag-ului de autentificare");
 	else
-		print_hex_with_caption("[+] Textul decriptat este: ", decrypted, PLAINTEXT_LENGTH);
+		print_hex(decrypted, PLAINTEXT_LENGTH, "[+] Textul decriptat este: ");
 
 	// Delete the context
 	FreeContext();

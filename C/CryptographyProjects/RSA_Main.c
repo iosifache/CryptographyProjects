@@ -1,8 +1,7 @@
-#include "RSA_Main.h"
-
 #pragma region IncludedHeaders
 
-#include "RSA_Elements.h"
+#include "RSA_Main.h"
+#include "RSA_Internals.h"
 #include "UTL_Output.h"
 
 #pragma endregion
@@ -17,7 +16,7 @@
 
 #pragma region MainFunction
 
-int RSA_Main(int argc, char** argv){
+int RSA_Main(int argc, char **argv){
 
 	RSA *key;
 	uchar *ciphertext, *decrypted;
@@ -29,11 +28,11 @@ int RSA_Main(int argc, char** argv){
 
 	// Encrypt text
 	ciphertext = RSA_encrypt(key, plaintext, PLAINTEXT_LENGTH, &ciphertext_length);
-	print_hex_with_caption("[+] Encrypted text is: ", ciphertext, ciphertext_length);
+	print_hex(ciphertext, ciphertext_length, "[+] Encrypted text is: ");
 
 	// Decrypt text
 	decrypted = RSA_decrypt(key, ciphertext, ciphertext_length);
-	print_hex_with_caption("[+] Decrypted text is: ", decrypted, PLAINTEXT_LENGTH);
+	print_hex(decrypted, PLAINTEXT_LENGTH, "[+] Decrypted text is: ");
 
 	// Return
 	return 0;

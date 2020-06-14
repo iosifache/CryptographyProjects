@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include "AiG_Elements.h"
+#include "AiG_Internals.h"
 #include "UTL_Math.h"
 
 #pragma endregion
