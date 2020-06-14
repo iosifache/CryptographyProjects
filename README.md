@@ -15,11 +15,14 @@
 
 ### `Python 3`
 
-| Name                     | Identification Code | Type              | Status                                                             | Description                                                                                                                    |
-|--------------------------|---------------------|-------------------|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Bruteforce BC4           | `bc4`               | Homework          | ![](https://img.shields.io/badge/-working-brightgreen)             | Bruteforce of a custom-made stream cipher                                                                                      |
-| Crack Four-eye Principle | `4ep`               | Homework          | ![](https://img.shields.io/badge/-working-brightgreen)             | Crack for a four-eye-based protocol                                                                                            |
-| Utilities                | `utl`               | Utility functions | ![](https://img.shields.io/badge/-working-brightgreen)             | Functions used in all other projects                                                                                           |
+| Name                                  | Identification Code | Type              | Status                                                             | Description                                                                                                                    |
+|---------------------------------------|---------------------|-------------------|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Bruteforce BC4                        | `bc4`               | Homework          | ![](https://img.shields.io/badge/-working-brightgreen)             | Bruteforce of a custom-made stream cipher                                                                                      |
+| Crack Four-eye Principle              | `4ep`               | Homework          | ![](https://img.shields.io/badge/-working-brightgreen)             | Crack for a four-eye-based protocol                                                                                            |
+| BMP Encryption with AES               | `amc`               | Homework          | ![](https://img.shields.io/badge/-working-brightgreen)             | Comparision of AES encryption mode over a BMP image                                                                            |
+| Crack RSA with Factorisation Database | `fdb`               | Homework          | ![](https://img.shields.io/badge/-working-brightgreen)             | Crack for RSA encryption using a factorisation fatabase, [factordb](factordb.com)                                              |
+| Crack RSA with CRT                    | `crt`               | Homework          | ![](https://img.shields.io/badge/-working-brightgreen)             | Crack for RSA encryption using Chinese Remainder Theorem                                                                       |
+| Utilities                             | `utl`               | Utility functions | ![](https://img.shields.io/badge/-working-brightgreen)             | Functions used in all other projects                                                                                           |
 
 ## Setup :wrench:
 
